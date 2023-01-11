@@ -59,18 +59,6 @@ export default function Login() {
     window.open("http://localhost:8080/auth/google", "_self");
   };
 
-  const facebookLogin = () => {
-    window.open("http://localhost:8080/auth/facebook", "_self");
-  };
-
-  const twitterLogin = () => {
-    window.open("http://localhost:8080/auth/twitter", "_self");
-  };
-
-  const githubLogin = () => {
-    window.open("http://localhost:8080/auth/github", "_self");
-  };
-
   return (
     <>
       <NavBar />
@@ -147,7 +135,6 @@ export default function Login() {
                     src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
                     alt="facebook"
                     style={{ width: "30px", margin: "20px" }}
-                    // onClick={facebookLogin}
                   />
                 </div>
                 <div>
@@ -155,7 +142,6 @@ export default function Login() {
                     src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png"
                     alt="twitter"
                     style={{ width: "30px", margin: "20px" }}
-                    // onClick={twitterLogin}
                   />
                 </div>
                 <div>
@@ -163,7 +149,6 @@ export default function Login() {
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                     alt="github"
                     style={{ width: "30px", margin: "20px" }}
-                    // onClick={githubLogin}
                   />
                 </div>
               </div>
