@@ -56,7 +56,7 @@ export default function Login() {
   };
 
   const googleLogin = () => {
-    window.open("http://localhost:8080/auth/google", "_self");
+    window.open(`${process.env.REACT_APP_BASE_URL}/auth/google`, "_self");
   };
 
   return (
@@ -71,6 +71,7 @@ export default function Login() {
               <Form.Group className="mb-3">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control
+                  style={{ width: "100%" }}
                   type="email"
                   placeholder="Enter email"
                   value={email}
@@ -84,6 +85,7 @@ export default function Login() {
               <Form.Group className="mb-3">
                 <Form.Label>Password</Form.Label>
                 <Form.Control
+                  style={{ width: "100%" }}
                   type="password"
                   placeholder="Password"
                   value={password}
@@ -96,6 +98,7 @@ export default function Login() {
               </Form.Group>
               <div className="d-flex justify-content-center">
                 <Button
+                  style={{ width: "50%" }}
                   variant="primary"
                   type="submit"
                   {...(submitting ? { disabled: true } : {})}

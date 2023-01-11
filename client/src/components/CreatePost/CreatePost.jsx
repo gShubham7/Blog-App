@@ -48,6 +48,10 @@ export default function CreatePost() {
     formData.append("token", localStorage.getItem("token"));
     axios({
       method: "post",
+      // headers: {
+      //   "Access-Control-Allow-Origin": "*",
+      //   "Content-Type": "application/json",
+      // },
       url: `${process.env.REACT_APP_BASE_URL}/user/create`,
       data: formData,
     })

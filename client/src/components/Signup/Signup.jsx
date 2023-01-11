@@ -80,6 +80,7 @@ export default function Signup() {
               <Form.Group className="mb-3">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
+                  style={{ width: "100%" }}
                   type="text"
                   placeholder="Enter Name"
                   value={name}
@@ -93,6 +94,7 @@ export default function Signup() {
               <Form.Group className="mb-3">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control
+                  style={{ width: "100%" }}
                   type="email"
                   placeholder="Enter email"
                   value={email}
@@ -106,6 +108,7 @@ export default function Signup() {
               <Form.Group className="mb-3">
                 <Form.Label>Password</Form.Label>
                 <Form.Control
+                  style={{ width: "100%" }}
                   type="password"
                   placeholder="Password"
                   value={password}
@@ -119,6 +122,7 @@ export default function Signup() {
               <Form.Group className="mb-3">
                 <Form.Label>Confirm Password</Form.Label>
                 <Form.Control
+                  style={{ width: "100%" }}
                   type="password"
                   placeholder="Confirm Password"
                   value={confirmPassword}
@@ -131,6 +135,7 @@ export default function Signup() {
               </Form.Group>
               <div className="d-flex justify-content-center">
                 <Button
+                  style={{ width: "50%" }}
                   variant="primary"
                   type="submit"
                   {...(submitting ? { disabled: true } : {})}

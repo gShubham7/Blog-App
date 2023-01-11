@@ -61,66 +61,7 @@ export default function NavBar() {
           setGoogleLoggedIn(false);
         });
     }
-  }, []);
-
-  useEffect(() => {
-    if (!localStorage.getItem("token")) {
-      axios
-        .get(`${process.env.REACT_APP_BASE_URL}/auth/facebook/getuser`, {
-          withCredentials: true,
-        })
-        .then((res) => {
-          localStorage.setItem("token", res.data.token);
-          setFacebookLoggedIn(true);
-          setName(res.data.displayName);
-          setEmail(res.data.email);
-        })
-        .catch((e) => {
-          console.log(e);
-          setFacebookLoggedIn(false);
-        });
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!localStorage.getItem("token")) {
-      axios
-        .get(`${process.env.REACT_APP_BASE_URL}/auth/twitter/getuser`, {
-          withCredentials: true,
-        })
-        .then((res) => {
-          localStorage.setItem("token", res.data.token);
-          setTwitterLoggedIn(true);
-          setName(res.data.displayName);
-          setEmail(res.data.email);
-        })
-        .catch((e) => {
-          console.log(e);
-          setTwitterLoggedIn(false);
-        });
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!localStorage.getItem("token")) {
-      console.log("inside");
-      axios
-        .get(`${process.env.REACT_APP_BASE_URL}/auth/github/getuser`, {
-          withCredentials: true,
-        })
-        .then((res) => {
-          localStorage.setItem("token", res.data.token);
-          setGithubLoggedIn(true);
-          console.log("inside2");
-          setName(res.data.displayName);
-          setEmail(res.data.email);
-        })
-        .catch((e) => {
-          console.log(e);
-          setGithubLoggedIn(false);
-        });
-    }
-  }, []);
+  }, []); 
 
   const logout = () => {
     localStorage.removeItem("token");
@@ -166,6 +107,7 @@ export default function NavBar() {
                 }}
               >
                 <FormControl
+                style={{width:"100%"}}
                   type="search"
                   placeholder="Search"
                   className="me-2"
@@ -220,6 +162,7 @@ export default function NavBar() {
               <Nav>
                 <Nav.Link>
                   <Button
+                  style={{width:"100%"}}
                     variant="success"
                     className="login"
                     onClick={() => {
@@ -231,6 +174,7 @@ export default function NavBar() {
                 </Nav.Link>
                 <Nav.Link>
                   <Button
+                  style={{width:"100%"}}
                     variant="success"
                     className="signup"
                     onClick={() => {
