@@ -1,6 +1,15 @@
 const jwt = require("jsonwebtoken");
 const UserModel = require("../models/user.model");
 const BlogModel = require("../models/blog.model");
+const cloudinary = require("cloudinary").v2;
+
+const { CLOUD_NAME, API_KEY, API_SECRET } = process.env;
+
+cloudinary.config({
+  cloud_name: CLOUD_NAME,
+  api_key: API_KEY,
+  api_secret: API_SECRET,
+});
 
 //all blogs will be showed here....................
 const data = async (req, res) => {
