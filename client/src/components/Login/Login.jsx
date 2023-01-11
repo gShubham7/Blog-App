@@ -147,7 +147,7 @@ export default function Login() {
                     src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
                     alt="facebook"
                     style={{ width: "30px", margin: "20px" }}
-                    onClick={facebookLogin}
+                    // onClick={facebookLogin}
                   />
                 </div>
                 <div>
@@ -155,7 +155,7 @@ export default function Login() {
                     src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png"
                     alt="twitter"
                     style={{ width: "30px", margin: "20px" }}
-                    onClick={twitterLogin}
+                    // onClick={twitterLogin}
                   />
                 </div>
                 <div>
@@ -163,7 +163,7 @@ export default function Login() {
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                     alt="github"
                     style={{ width: "30px", margin: "20px" }}
-                    onClick={githubLogin}
+                    // onClick={githubLogin}
                   />
                 </div>
               </div>
