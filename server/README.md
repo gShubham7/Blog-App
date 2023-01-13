@@ -1,23 +1,35 @@
-# Sample Environment Variables for Server
+## Environment Variables
 
-- PORT = 
-- DB_URL = 
+To run this project, you will need to add the following environment variables to your .env file
 
-- JWT_SECRET = 
-- SALT_ROUNDS = 
+`PORT` 
 
-- GITHUB_CLIENT_ID = 
-- GITHUB_CLIENT_SECRET = 
+`DB_URL` 
 
-- GOOGLE_CLIENT_ID = 
-- GOOGLE_CLIENT_SECRET = 
+`JWT_SECRET` 
 
-- FACEBOOK_APP_ID = 
-- FACEBOOK_APP_SECRET = 
+`SALT_ROUNDS` 
 
-- TWITTER_CONSUMER_KEY = 
-- TWITTER_CONSUMER_SECRET = 
+`GITHUB_CLIENT_ID` 
 
-- CLOUD_NAME = 
-- API_KEY = 
-- API_SECRET = 
+`GITHUB_CLIENT_SECRET` 
+
+`GOOGLE_CLIENT_ID` 
+
+`GOOGLE_CLIENT_SECRET` 
+
+`FACEBOOK_APP_ID` 
+
+`FACEBOOK_APP_SECRET` 
+
+`TWITTER_CONSUMER_KEY` 
+
+`TWITTER_CONSUMER_SECRET` 
+
+### Clodinary env
+
+`CLOUD_NAME` 
+
+`API_KEY` 
+
+`API_SECRET`
