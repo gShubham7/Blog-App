@@ -1,7 +1,7 @@
 
 <h1 align="center">Blog App</h1>
 
-<h3 align="center">It's an blogging web application where one can see all blogs, create own blogs and can edit them also with likes and comments.</h3>
+<h3 align="center">It's a blogging web application where one can see all blogs, create own blogs and can edit them also with likes and comments.</h3>
 
 <br />
 
