@@ -11,7 +11,7 @@ const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
 const JWT_SECRET = process.env.JWT_SECRET;
 
-Router.use(cors({ origin: `https://stunning-gumdrop-f22701.netlify.app`, credentials: true }));
+// Router.use(cors({ origin: `https://stunning-gumdrop-f22701.netlify.app`, credentials: true }));
 
 Router.use(
   session({
