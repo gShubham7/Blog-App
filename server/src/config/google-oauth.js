@@ -80,10 +80,10 @@ Router.get(
 Router.get(
   "/callback",
   passport.authenticate("google", {
-    failureRedirect: "http://localhost:3000",
+    failureRedirect: "https://stunning-gumdrop-f22701.netlify.app",
   }),
   function (req, res) {
-    res.redirect("http://localhost:3000");
+    res.redirect("https://stunning-gumdrop-f22701.netlify.app");
   }
 );
 
